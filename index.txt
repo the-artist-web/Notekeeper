@@ -5,7 +5,8 @@ Streamline your daily note-taking with Notekeeper. Organize, access, and enhance
 
 #---------- SIDEBAR ----------#
 
-aria-label = Close menu
+alt = Notekeeper
+
 <span class="material-symbols-rounded" aria-hidden="true">close</span>
 
 <span class="material-symbols-rounded" aria-hidden="true">add</span>
@@ -13,7 +14,7 @@ New note
 
 NOTEBOOKS
 
-aria-label = Create new notebook
+Create new notebook
 <span class="material-symbols-rounded" aria-hidden="true">add</span>
 
 My Notebook
@@ -24,7 +25,7 @@ aria-label = Edit notebook
 aria-label = Delete notebook
 <span class="material-symbols-rounded" aria-hidden="true">delete</span>
 
-Copyright 2023 codewithsadee
+Copyright 2023 theartistweb
 
 
 #---------- MAIN ----------#
