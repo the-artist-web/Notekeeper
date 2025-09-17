@@ -884,6 +884,7 @@ body {
    * SIDEBAR
    */
   .sidebar {
+    box-shadow: none;
     visibility: visible;
     left: 0;
     height: 100vh;
