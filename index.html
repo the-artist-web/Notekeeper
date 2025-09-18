@@ -93,40 +93,7 @@
             <nav 
                 class="nav custom-scrollbar"
                 data-sidebar-list
-            >
-                <!-- <div class="nav-item active">
-                    <span
-                        class="text text-label-large"
-                        data-notebook-field
-                    >
-                        My Notebook
-                    </span>
-
-                    <button
-                        type="button"
-                        class="icon-btn small"
-                        data-tooltip="Edit notebook"
-                        data-edit-btn
-                    >
-                        <span class="material-symbols-rounded" aria-hidden="true">edit</span>
-
-                        <div class="state-layer"></div>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="icon-btn small"
-                        data-tooltip="Delete notebook"
-                        data-delete-btn
-                    >
-                        <span class="material-symbols-rounded" aria-hidden="true">delete</span>
-
-                        <div class="state-layer"></div>
-                    </button>
-
-                    <div class="state-layer"></div>
-                </div> -->
-            </nav>
+            ></nav>
 
             <div class="cp-info">
                 <span class="text-label-large">Copyright 2023 <strong>theartistweb</strong></span>
@@ -141,167 +108,65 @@
         ></div>
 
         <main class="main">
-            <article>
-                <!-- HEADER SECTION -->
-                <div class="header">
-                    <div class="wrapper">
-                        <p 
-                            class="title text-title-large"
-                            data-greeting
-                        ></p>
+            <!-- HEADER SECTION -->
+            <div class="header">
+                <div class="wrapper">
+                    <p 
+                        class="title text-title-large"
+                        data-greeting
+                    ></p>
 
-                        <span 
-                            class="text text-body-meidum"
-                            data-current-date
-                        ></span>
-                    </div>
-
-                    <button
-                        type="button"
-                        class="theme-btn icon-btn large"
-                        data-tooltip="Toggle theme"
-                        data-theme-btn
-                    >
-                        <span class="material-symbols-rounded dark-icon" aria-hidden="true">dark_mode</span>
-                        <span class="material-symbols-rounded light-icon" aria-hidden="true">light_mode</span>
-
-                        <div class="state-layer"></div>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="menu-icon icon-btn large"
-                        data-tooltip="Open menu"
-                        data-sidebar-toggler
-                    >
-                        <span class="material-symbols-rounded" aria-hidden="true">menu</span>
-
-                        <div class="state-layer"></div>
-                    </button>
+                    <span 
+                        class="text text-body-meidum"
+                        data-current-date
+                    ></span>
                 </div>
 
-                <h2 
-                    class="title text-title-medium"
-                    data-note-panel-title
-                >My Notebook</h2>
-
-                <!-- NOTE LIST -->
-                <div 
-                    class="note-list"
-                    data-note-pane
-                >
-                    <!-- <div class="card">
-                        <h3 class="card-title text-title-meidum">Note title</h3>
-
-                        <p class="card-text text-body-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis earum quo architecto, quidem quae ex aspernatur illum consectetur officia placeat, ratione inventore, fuga distinctio nihil aut ad illo deleniti.</p>
-                        
-                        <div class="wrapper">
-                            <span class="card-time text-label-large">20 min ago</span>
-
-                            <button
-                                type="button"
-                                class="icon-btn large"
-                                data-tooltip="Delete note"
-                            >
-                                <span class="material-symbols-rounded" aria-hidden="true">delete</span>
-
-                                <div class="state-layer"></div>
-                            </button>
-                        </div>
-
-                        <div class="state-layer"></div>
-                    </div> -->
-                </div>
-
-                <!-- FAB button for mobile -->
                 <button
                     type="button"
-                    class="fab"
-                    data-note-create-btn
+                    class="theme-btn icon-btn large"
+                    data-tooltip="Toggle theme"
+                    data-theme-btn
                 >
-                    <span class="material-symbols-rounded" aria-hidden="true">add</span>
-
-                    <!-- <span class="text text-label-large">New note</span> -->
+                    <span class="material-symbols-rounded dark-icon" aria-hidden="true">dark_mode</span>
+                    <span class="material-symbols-rounded light-icon" aria-hidden="true">light_mode</span>
 
                     <div class="state-layer"></div>
                 </button>
 
-                <!-- MODELS -->
-                <!-- <div class="modal">
-                    <button
-                        type="button"
-                        class="icon-btn large"
-                    >
-                        <span class="material-symbols-rounded" aria-hidden="true">close</span>
+                <button
+                    type="button"
+                    class="menu-icon icon-btn large"
+                    data-tooltip="Open menu"
+                    data-sidebar-toggler
+                >
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
 
-                        <div class="state-layer"></div>
-                    </button>
+                    <div class="state-layer"></div>
+                </button>
+            </div>
 
-                    <input 
-                        type="text"
-                        placeholder="Untitled"
-                        class="modal-title text-title-meidum"
-                        data-note-field
-                    />
+            <h2 
+                class="title text-title-medium"
+                data-note-panel-title
+            ></h2>
 
-                    <textarea 
-                        placeholder="Take a note..."
-                        class="modal-text text-body-large custom-scrollbar"
-                        data-note-field
-                    >Take a note...</textarea>
+            <!-- NOTE LIST -->
+            <div 
+                class="note-list"
+                data-note-panel
+            ></div>
 
-                    <div class="modal-footer">
-                        <span class="time text-label-large">20 min ago</span>
-                        
-                        <button
-                            type="button"
-                            class="btn text"
-                            data-submit-btn
-                        >
-                            <span class="text-label-large">Save</span>
+            <!-- FAB button for mobile -->
+            <button
+                type="button"
+                class="fab"
+                data-note-create-btn
+            >
+                <span class="material-symbols-rounded" aria-hidden="true">add</span>
 
-                            <div class="state-layer"></div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="modal">
-                    <h3 class="modal-title text-title-medium">
-                        Are you sure you want to delete <strong>"Note title"</strong>?
-                    </h3>
-
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn text"
-                        >
-                            <span class="text-label-large">Cancel</span>
-
-                            <div class="state-layer"></div>
-                        </button>
-
-                        <button
-                            type="button"
-                            class="btn fill"
-                        >
-                            <span class="text-label-large">Delete</span>
-
-                            <div class="state-layer"></div>
-                        </button>
-                    </div>
-                </div>
-
-                <div
-                    class="overlay modal-overlay"
-                    data-modal-overlay
-                ></div> -->
-            
-                <!-- <div class="empty-notes">
-                    <span class="material-symbols-rounded">note_stack</span>
-
-                    <div class="text-headline-small">No Notes</div>
-                </div> -->
-            </article>
+                <div class="state-layer"></div>
+            </button>
         </main>
     </body>
 </html>

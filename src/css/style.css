@@ -31,7 +31,7 @@
   --background-dark: #201A18;
   --on-background-dark: #EDE0DB;
   --surface-dark: #181210;
-  --surface-container-low-dark: #201A18;
+  --surface-container-low-dark: #251e1c;
   --surface-container-highest-dark: #3A3330;
   --on-surface-dark: #D0C4BF;
   --on-surface-variant-dark: #D7C2B9;
@@ -816,12 +816,15 @@ body {
 [data-theme="dark"]
   .theme-btn { transform: rotate(-90deg); }
 
-.main article > .title { margin-block: var(--spacing-3); }
+.main > .title { margin-block: var(--spacing-3); }
 
 .note-list {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  align-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
   gap: var(--spacing-2);
 }
 
@@ -840,6 +843,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-4);
   color: var(--on-surface-variant);
   user-select: none;
